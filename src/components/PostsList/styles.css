@@ -1,0 +1,13 @@
+.postList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 40px;
+    margin-top: 50px;
+    min-height: 5rem;
+}
+
+@media (max-width: 769px) {
+    .postList {
+        grid-template-columns: 1fr;
+    }
+}

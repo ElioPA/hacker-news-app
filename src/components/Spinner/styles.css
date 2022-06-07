@@ -1,0 +1,17 @@
+.spinner {
+    margin: 15px;
+    display: flex;
+    justify-content: center; 
+}
+
+.spinner__icon {
+    font-size: 1.5rem;
+    color: #3b3b3b;
+    animation: spinner 1s infinite;
+}
+
+@keyframes spinner{
+    to {
+        transform: rotate(360deg);
+    }
+}

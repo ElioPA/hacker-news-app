@@ -1,0 +1,12 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto';
+}
+
+@media (max-width: 600px){
+  body {
+    font-size: 14px;
+  }
+}

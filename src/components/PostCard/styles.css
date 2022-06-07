@@ -1,0 +1,83 @@
+.card {
+    display: flex;
+    justify-content: space-between;
+    min-height: 5rem;
+    opacity: 0.8; 
+    border-radius: 6px;
+    border: solid 1px #979797;
+}
+
+.card__content {
+    outline: none;
+    text-decoration: none;
+    cursor: default;
+    color: black;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 87%;
+    height: 100%;
+    padding: 0 25px;
+}
+
+.card__header {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+.card__header-text {
+    margin: 0 0 0 7px;
+    color: #767676;
+}
+
+.card__header-icon {
+    font-size: 1.25rem;
+}
+
+.card__body {
+    font-family: Roboto;
+    margin: 4px 0 0 2px;
+}
+
+.card__fav {
+    background-color: #F1F1F1;
+    height: 100%;
+    width: 13%;
+    border-radius: 0 6px 6px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__fav-btn {
+    padding: 0 ;
+    border: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card__fav-icon {
+    color: red;
+    font-size: 1.6em;
+}
+
+@media (any-pointer: fine) {
+    .card:hover {
+        opacity: 0.4;
+    }
+    .card__fav-icon:hover {
+        font-size: 1.8em;
+    }
+}
+
+.card:active {
+    opacity: 0.4;
+}
+
+.card__fav-icon:active {
+    font-size: 1.8em;
+}

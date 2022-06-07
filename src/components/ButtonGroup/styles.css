@@ -1,0 +1,44 @@
+.container-buttonGroup {
+    width: 100%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.radio {
+    display: inline-flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 2px;
+}
+
+.radio__input {
+    display: none;
+}
+
+.radio__label {
+    text-align: center;
+    border: 1.5px solid #DCD8D8;
+    padding: 3px 0;
+    width: 6rem;
+    user-select: none;
+}
+
+@media (any-pointer: fine) {
+    .radio__label {
+        cursor: pointer;
+    }
+}
+
+.radio__label--all {
+    border-right: none;
+}
+
+.radio__label--fav {
+    border-left: none;
+}
+
+.radio__input:checked + .radio__label {
+    color: #3CA1FA;
+    border: 1.5px solid#3CA1FA;
+}

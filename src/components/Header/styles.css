@@ -1,0 +1,13 @@
+header {
+    margin: 0 auto;
+    font-family: 'Baskerville';
+    font-size: 1em;
+    color: #3b3b3b;
+    padding: 10px 0px;
+    box-shadow: 0.6px 2.5px 4px 0.01px rgba(0, 0, 0, 0.12);
+}
+
+.header__title {
+    width: 80%;
+    margin: 0 auto;
+}
