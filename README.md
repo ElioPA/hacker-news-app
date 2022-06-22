@@ -17,22 +17,22 @@ Web application to read news about technologies. This project was created using 
 
 ### 1. Clone the repository
 
-    ```
-    git clone https://github.com/ElioPA/hacker-news-app
-    ```
-
+```
+git clone https://github.com/ElioPA/hacker-news-app
+```
+   
 ### 2. Install dependencies
 
-    ```
-    npm install
-    ```
+```
+npm install
+```
 
 ### 3. Runs the app
 
-    ```
-    npm start
-    ```
+```
+npm start
+```
 
-## Demo of the app
+## Demo
 
-    [https://app-hacker-news.netlify.app](https://app-hacker-news.netlify.app)
+https://app-hacker-news.netlify.app/
