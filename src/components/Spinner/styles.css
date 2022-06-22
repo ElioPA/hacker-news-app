@@ -6,7 +6,7 @@
 
 .spinner__icon {
     font-size: 1.5rem;
-    color: #3b3b3b;
+    color: var(--text-primary);
     animation: spinner 1s infinite;
 }
 

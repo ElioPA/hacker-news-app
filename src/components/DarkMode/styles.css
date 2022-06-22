@@ -1,0 +1,16 @@
+.darkMode-container {
+    margin-right: 2.5%;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.light-icon {
+    display: flex;
+    align-items: center;
+}
+
+.dark-icon {
+    display: flex;
+    align-items: center;
+}

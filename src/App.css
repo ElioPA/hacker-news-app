@@ -1,0 +1,26 @@
+:root {
+    --background: #F0F2F5;
+    --text-primary: #000;
+    --text-secondary: #767676;
+    --dropdown-card: #fff;
+    --dropdown-hover: #f9f9f9; 
+    --border: #333;
+    --background-fav: #F1F1F1;
+}
+
+[theme='dark'] {
+    --background: #1e1e1e;
+    --text-primary: #fff;
+    --text-secondary: #ababab;
+    --dropdown-card: #3b3b3b;
+    --dropdown-hover: #333;
+    --border: #808080;
+    --background-fav: #303030;
+}
+
+.app {
+    min-height: 100vh;
+    min-width: 232px;
+    background-color: var(--background);
+    color: var(--text-primary);
+}

@@ -1,33 +1,20 @@
-import {createContext, useEffect, useState} from 'react';
+import { createContext, useState } from 'react';
 
 export const PostContext = createContext([]);
 
-export const PostProvider = ({children}) => {
-    
+export const PostProvider = ({ children }) => {
+
     const [posts, setPosts] = useState([]);
-    const [favorites, setFavorites] = useState(() => {
-        const localData = localStorage.getItem('faves');
-        return localData? JSON.parse(localData) : [];
-    });
-    const [allOrFaves, setAllOrFaves] = useState(() => localStorage.getItem('allOrFaves') || 'all');
-    const [filter, setFilter] = useState(() => localStorage.getItem('filter')?.toLowerCase());
+    const [filter, setFilter] = useState(() => localStorage.getItem('filter') || 'Breaking');
 
-    useEffect(() => {
-        localStorage.setItem('faves', JSON.stringify(favorites));     
-    },[favorites])
-
-    return(
+    return (
         <PostContext.Provider value={{
             posts,
             setPosts,
-            favorites,
-            setFavorites,
-            allOrFaves,
-            setAllOrFaves,
             filter,
             setFilter
         }}>
             {children}
         </PostContext.Provider>
-    ) 
+    )
 }

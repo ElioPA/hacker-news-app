@@ -1,13 +1,21 @@
+import { useContext } from 'react';
 import { Header, Main } from './components';
-import { PostProvider } from './context/PostContext';
+import { FavoritesProvider, PostProvider, ThemeContext } from './context'
+import './App.css';
 
 function App() {
 
+  const { theme } = useContext(ThemeContext);
+
   return (
-    <PostProvider>
-        <Header />
-        <Main />
-    </PostProvider>
+    <div className='app' theme={theme}>
+      <Header />
+      <PostProvider>
+        <FavoritesProvider>
+          <Main />
+        </FavoritesProvider>
+      </PostProvider>
+    </div>
   );
 }
 

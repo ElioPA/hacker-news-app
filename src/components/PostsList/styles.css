@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px 40px;
-    margin-top: 50px;
+    margin: 20px 0;
     min-height: 5rem;
 }
 

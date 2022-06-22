@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import { useGlobalContext } from '../../hooks/useGlobalContext';
+import { useFavorites } from '../../hooks/useFavorites';
 import './styles.css';
 
 export function ButtonGroup() {
 
     const [toggle, setToggle] = useState(true);
-    const { setAllOrFaves } = useGlobalContext();
+    const { setAllOrFaves } = useFavorites();
 
-    const handleInput = ({target}) => {
+    const handleInput = ({ target }) => {
         setAllOrFaves(target.value);
         localStorage.setItem('allOrFaves', target.value);
         setToggle(!toggle);

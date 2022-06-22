@@ -1,3 +1,4 @@
+import { DarkMode } from '../DarkMode';
 import './styles.css';
 
 export function Header() {
@@ -6,6 +7,7 @@ export function Header() {
             <div className='header__title'>
                 <h1>HACKER NEWS</h1>
             </div>
+            <DarkMode />
         </header>
     )
 }

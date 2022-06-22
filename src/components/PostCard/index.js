@@ -1,12 +1,12 @@
 import { format } from 'timeago.js';
 import { BiTime } from 'react-icons/bi';
 import { FaRegHeart, FaHeart } from 'react-icons/fa';
-import {useGlobalContext} from '../../hooks/useGlobalContext';
+import { useFavorites } from '../../hooks/useFavorites';
 import './styles.css';
 
 export function PostCard({ post }) {
 
-    const { favorites ,setFavorites } = useGlobalContext();
+    const { favorites, setFavorites } = useFavorites();
 
     const favs = [...favorites];
     const isFavorite = favs?.some(fav => fav.objectID === post.objectID && fav.query === post.query);
@@ -32,7 +32,7 @@ export function PostCard({ post }) {
             </a>
             <div className='card__fav'>
                 <button className='card__fav-btn'>
-                    {isFavorite 
+                    {isFavorite
                         ? <FaHeart className='card__fav-icon' onClick={handleClick} />
                         : <FaRegHeart className='card__fav-icon' onClick={handleClick} />}
                 </button>

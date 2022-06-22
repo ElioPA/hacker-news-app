@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { useGlobalContext } from '../../hooks/useGlobalContext';
-import { angularIcon, downIcon, reactIcon, vueIcon } from '../../assets';
+import { angularIcon, reactIcon, vueIcon } from '../../assets';
+import { HiOutlineChevronDown } from 'react-icons/hi';
+
 import './styles.css';
 
 export const Dropdown = () => {
@@ -17,7 +19,7 @@ export const Dropdown = () => {
     const handleClickSelected = (filter) => {
         setSelected(filter);
         setWasClicked(false);
-        setFilter(filter.toLowerCase());
+        setFilter(filter);
         localStorage.setItem('filter', filter);
     }
 
@@ -32,7 +34,7 @@ export const Dropdown = () => {
         <div className='dropdown'>
             <div className='dropdown__btn' onClick={handleClickDropdown}>
                 {selected}
-                <span><img src={downIcon} className="dropdown__btn-icon" alt="down icon" /></span>
+                <span><HiOutlineChevronDown className="dropdown__btn-icon" /></span>
             </div>
             {wasClicked &&
                 <div className='dropdown__options'>
